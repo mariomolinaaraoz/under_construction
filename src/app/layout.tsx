@@ -9,7 +9,7 @@ export const metadata = {
   // Agregar propiedades Open Graph
   ogTitle: 'Mario Molina - Steel Detailer',
   ogDescription: 'Providing top-quality steel detailing services for various industries.',
-  ogImage: '/path/to/og-image.jpg', // Ruta de la imagen de vista previa para compartir en redes sociales
+  ogImage: 'https://www.steeldetailer.com.ar/_next/image?url=%2Flogo.png&w=128&q=75', // Ruta de la imagen de vista previa para compartir en redes sociales
   ogUrl: 'https://www.steeldetailer.com.ar', // URL canónica de la página
   
 }
