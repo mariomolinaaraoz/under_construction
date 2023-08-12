@@ -11,7 +11,12 @@ export const metadata = {
   ogDescription: 'Providing top-quality steel detailing services for various industries.',
   ogImage: 'https://www.steeldetailer.com.ar/_next/image?url=%2Flogo.png&w=128&q=75', // Ruta de la imagen de vista previa para compartir en redes sociales
   ogUrl: 'https://www.steeldetailer.com.ar', // URL canónica de la página
-  
+  // Agregar favicon
+  manifest: '/site.webmanifest', // Link to the site.webmanifest
+  favicon: '/favicon.ico', // Link to the favicon
+  favicon32: '/favicon-32x32.png', // Link to the favicon 32x32
+  favicon16: '/favicon-16x16.png', // Link to the favicon 16x16  
+  appleTouchIcon: '/apple-touch-icon.png' // Link to the apple-touch-icon
 }
 
 export default function RootLayout({
