@@ -4,9 +4,7 @@ import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Mario Moina - Steel Detailer',
-  description: 'Mario Molina - Steel Detailer, provides steel detailing services for industry and steel fabricators. Among our services are Industrial steel detailing, Structural steel detailing, Miscellaneous steel detailing, Shop drawing production, BIM modeling and Fabrication support.',
+export const metadata = {    
   // Agregar propiedades Open Graph
   ogTitle: 'Mario Molina - Steel Detailer',
   ogDescription: 'Providing top-quality steel detailing services for various industries.',
@@ -25,8 +23,8 @@ export default function RootLayout({
       <body className={inter.className}>{children}</body>      
     </html>
     <Head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
+        <title>Mario Moina - Steel Detailer</title>
+        <meta name="description" content='Mario Molina - Steel Detailer, provides steel detailing services for industry and steel fabricators. Among our services are Industrial steel detailing, Structural steel detailing, Miscellaneous steel detailing, Shop drawing production, BIM modeling and Fabrication support.'/>
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content={metadata.ogTitle} />
         <meta property="og:description" content={metadata.ogDescription} />
