@@ -1,11 +1,27 @@
-import { Analytics } from "@vercel/analytics/react";
+import Head from 'next/head';
 import Image from "next/image";
+import { Analytics } from "@vercel/analytics/react";
 import BackgroundImage from "./components/BackgroundImage";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
       <Analytics />
+      <Head>
+        <title>Mario Moina - Steel Detailer</title>
+        <meta name="description" content='Mario Molina - Steel Detailer, provides steel detailing services for industry and steel fabricators. Among our services are Industrial steel detailing, Structural steel detailing, Miscellaneous steel detailing, Shop drawing production, BIM modeling and Fabrication support.'/>
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content='Mario Molina - Steel Detailer'/>
+        <meta property="og:description" content='Providing top-quality steel detailing services for various industries.'/>
+        <meta property="og:image" content='https://www.steeldetailer.com.ar/_next/image?url=%2Flogo.png&w=128&q=75'/>
+        <meta property="og:url" content='https://www.steeldetailer.com.ar'/>
+        <meta property="og:locale" content="es-Argentina" />
+        {/* Links for manifest, favicon, and icons */}
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+        <link rel="manifest" href="/site.webmanifest"/>
+      </Head>
       <BackgroundImage />
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
