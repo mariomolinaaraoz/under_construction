@@ -1,4 +1,5 @@
 import './globals.css'
+import Head from 'next/head';
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -25,8 +26,25 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+    <>
     <html lang="en">
       <body className={inter.className}>{children}</body>      
     </html>
+    <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content={metadata.ogTitle} />
+        <meta property="og:description" content={metadata.ogDescription} />
+        <meta property="og:image" content={metadata.ogImage} />
+        <meta property="og:url" content={metadata.ogUrl} />
+        {/* Links for manifest, favicon, and icons */}
+        <link rel="manifest" href={metadata.manifest} />
+        <link rel="icon" href={metadata.favicon} />
+        <link rel="apple-touch-icon" sizes="180x180" href={metadata.appleTouchIcon} />
+        <link rel="icon" type="image/png" sizes="32x32" href={metadata.favicon32} />
+        <link rel="icon" type="image/png" sizes="16x16" href={metadata.favicon16} />
+      </Head>
+    </>
   )
 }
